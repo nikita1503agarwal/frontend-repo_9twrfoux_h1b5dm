@@ -138,14 +138,14 @@ export default function Optimizer() {
           <h2 className="text-lg font-semibold mb-4">Entrada</h2>
           <form onSubmit={onSubmit} className="space-y-4">
             <div>
-              <label className="block text-sm mb-1">Archivo de demanda (.csv)</label>
-              <input type="file" accept=".csv" onChange={(e)=>setDemandFile(e.target.files[0]||null)} className="w-full text-sm file:mr-4 file:py-2 file:px-3 file:rounded-md file:border-0 file:text-sm file:bg-blue-600 file:text-white hover:file:bg-blue-500" />
-              <p className="text-xs text-slate-400 mt-1">Columnas: timestamp, demand, city</p>
+              <label className="block text-sm mb-1">Demanda (.csv o .xlsx)</label>
+              <input type="file" accept=".csv,.xls,.xlsx" onChange={(e)=>setDemandFile(e.target.files[0]||null)} className="w-full text-sm file:mr-4 file:py-2 file:px-3 file:rounded-md file:border-0 file:text-sm file:bg-blue-600 file:text-white hover:file:bg-blue-500" />
+              <p className="text-xs text-slate-400 mt-1">Columnas: city_code, slot_started_local_at, final_order_forecast (o city, timestamp, demand)</p>
             </div>
             <div>
-              <label className="block text-sm mb-1">Archivo de riders (.csv)</label>
-              <input type="file" accept=".csv" onChange={(e)=>setRidersFile(e.target.files[0]||null)} className="w-full text-sm file:mr-4 file:py-2 file:px-3 file:rounded-md file:border-0 file:text-sm file:bg-emerald-600 file:text-white hover:file:bg-emerald-500" />
-              <p className="text-xs text-slate-400 mt-1">Columnas: rider_id, city, start, end</p>
+              <label className="block text-sm mb-1">Riders (.csv o .xlsx)</label>
+              <input type="file" accept=".csv,.xls,.xlsx" onChange={(e)=>setRidersFile(e.target.files[0]||null)} className="w-full text-sm file:mr-4 file:py-2 file:px-3 file:rounded-md file:border-0 file:text-sm file:bg-emerald-600 file:text-white hover:file:bg-emerald-500" />
+              <p className="text-xs text-slate-400 mt-1">Columnas: CIUDAD, RIDER ID, Available from, Available to (o city, rider_id, start, end)</p>
             </div>
             <div className="grid grid-cols-2 gap-3">
               <div>
