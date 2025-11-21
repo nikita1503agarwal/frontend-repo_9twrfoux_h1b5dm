@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import DocsNav from './components/DocsNav'
 import DocsContent from './components/DocsContent'
 
@@ -17,12 +18,20 @@ function App() {
                   <p className="text-slate-400 text-sm">Versión final, optimizada y lista para entregar</p>
                 </div>
               </div>
-              <a
-                href="#examples"
-                className="hidden md:inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-400 text-white px-4 py-2 rounded-lg transition"
-              >
-                Descargar ejemplos
-              </a>
+              <div className="flex items-center gap-3">
+                <a
+                  href="#examples"
+                  className="hidden md:inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-400 text-white px-4 py-2 rounded-lg transition"
+                >
+                  Descargar ejemplos
+                </a>
+                <Link
+                  to="/optimizador"
+                  className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-lg transition"
+                >
+                  Abrir optimizador
+                </Link>
+              </div>
             </div>
           </header>
 
