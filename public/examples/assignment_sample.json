@@ -1,0 +1,18 @@
+[
+  {
+    "codigo_ciudad": "MAD",
+    "dia": "06/01/2025",
+    "hora_inicio": "12:00",
+    "hora_final": "16:00",
+    "accion": "BOOK",
+    "rider_id": "4096001"
+  },
+  {
+    "codigo_ciudad": "MAD",
+    "dia": "06/01/2025",
+    "hora_inicio": "12:30",
+    "hora_final": "16:30",
+    "accion": "BOOK",
+    "rider_id": "4096002"
+  }
+]
